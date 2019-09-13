@@ -104,7 +104,8 @@ a:hover {
      z-index: 99;
      opacity: 0;
      visibility: hidden;
-     overflow-x: hidden;
+     overflow-x: hidden; 
+     overflow-y: hidden;
      transform: tranlateY(-100%);
      transition: all .5s ease-in-out;
 }
@@ -157,5 +158,103 @@ a:hover {
 
 .nav-inner ul li:hover a {
      color: white;
+}
+
+.social-icons a {
+     display: inherit;
+     text-align: center;
+     color: white;
+     width: 50px;
+     height: 40px;
+     line-height: 30px;
+     font-size: 2.5em;
+     border-right: 50px;
+     margin-top: 40px;
+     transition: all ease 1s;
+}
+
+.social-icons a:hover i {
+     color: rgb(61, 61, 61);
+     margin-top: -10px;
+
+}
+
+ul.social-icons.list-inline {
+     text-align: center;
+     margin-top: 20px;
+}
+
+.list-inline > li {
+     display: inline-block;
+     padding-right: 5px;
+     padding-left: 5px;
+}
+
+/* Closing hamburger menu */
+
+.corner-circle {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 120px;
+     height: 100px;
+     background-color: white;
+     border-radius: 0 0 0 120px;
+     z-index: 2;
+}
+
+.nav-close {
+     display: block;
+     position: absolute;
+     width: 30px;
+     height: 30px;
+     top: 21.5px;
+     right: 34.5px;
+}
+
+.nav-close span {
+     display: block;
+     position: absolute;
+     width: 30px;
+     height: 1px;
+     top: 15px;
+     background: rgb(61, 61, 61);
+
+}
+
+.nav-close span:nth-child(1) {
+     transform: rotate(45deg);
+}
+
+.nav-close span:nth-child(2) {
+     transform: rotate(-45deg);
+}
+
+.nav.fixed {
+     position: fixed;
+     width: 100%;
+     background-color: white;
+     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.50);
+     animation-name: fade;
+     animation-duration: 1s;
+     animation-fill-mode: both;
+}
+
+.nav.fixed a {
+     color: rgb(61, 61, 61);
+}
+
+/*
+.nav.fixed ul li.logo .white {
+     display: none;
+}
+
+.nav.fixed ul li.logo .black {
+     display: none;
+}
+*/
+
+.nav.fixed .nav-icon span {
+     background: rgb(61, 61, 61);
 }
 
