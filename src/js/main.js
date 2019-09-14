@@ -11,6 +11,19 @@ $(document).ready(function() {
      });
 
 
+     $(".nav-close").mouseenter(function() {
+          $("#nav-close-1").css("backgroundColor", "#F1C30F");
+          $("#nav-close-2").css("backgroundColor", "#F1C30F");
+     });
+
+
+     $(".nav-close").mouseleave(function() {
+          $("#nav-close-1").css("backgroundColor", "#3D3D3D");
+          $("#nav-close-2").css("backgroundColor", "#3D3D3D");
+     });
+
+
+
      $(window).scroll(function() {
           var scrolling = $(this).scrollTop();
           if (scrolling >= 1) {
