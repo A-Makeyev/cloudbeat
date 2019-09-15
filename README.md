@@ -1,1 +1,1 @@
-https://makeyka.github.io/cloudbeat/
+CloudBeat
