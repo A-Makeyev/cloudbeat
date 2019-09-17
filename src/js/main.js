@@ -4,8 +4,7 @@ $(document).ready(function() {
           var scrolling = $(this).scrollTop();
           if (scrolling >= 1) {
                $(".nav").addClass("fixed");
-          }
-          else {
+          } else {
                $(".nav").removeClass("fixed");
           }
 
@@ -32,10 +31,6 @@ $(document).ready(function() {
           $("#nav-close-1").css("backgroundColor", "#3D3D3D");
           $("#nav-close-2").css("backgroundColor", "#3D3D3D");
      });
-
-
-     
-
 
 
 });
