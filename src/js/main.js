@@ -10,7 +10,22 @@ $(document).ready(function() {
 
      });
 
+
+     // Toggle demo div
+
+     $(".demo").click(function() {
+          $(".demo-div").toggleClass("open");
+          $(".bxslider").toggleClass("blur");
+     });
+     
+     $(".nav-close").click(function() {
+          $(".demo-div").removeClass("open");
+          $(".bxslider").removeClass("blur");
+     });
+
+
      // Hamburger menu
+     // Toggle full nav
 
      $(".nav-icon").click(function() {
           $(".full-nav").addClass("open");
@@ -19,7 +34,6 @@ $(document).ready(function() {
      $(".nav-close").click(function() {
           $(".full-nav").removeClass("open");
      });
-
 
      $(".nav-close").mouseenter(function() {
           $("#nav-close-1").css("backgroundColor", "#3AAFDE");
@@ -31,6 +45,24 @@ $(document).ready(function() {
           $("#nav-close-1").css("backgroundColor", "#3D3D3D");
           $("#nav-close-2").css("backgroundColor", "#3D3D3D");
      });
+
+
+     // Load ide.html into demo-div
+     $("#ide").load("ide.html");
+
+
+     const oxygen = {
+          "init": "web.init();",
+          "open": "web.open();"
+     }
+
+
+     
+
+
+
+
+
 
 
 });

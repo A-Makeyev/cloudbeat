@@ -95,6 +95,41 @@ a:hover {
      width: 30px; 
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~  DEMO ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.demo-div {
+     background: black;
+     color: #18191D;
+     position: fixed;
+     left: 23%;
+     top: 20%;
+     width: 55%;
+     height: 73%;
+     padding: 3.75rem;
+     z-index: 100;
+     opacity: 0;
+     visibility: hidden;
+     overflow-x: hidden; 
+     overflow-y: hidden;
+     transform: tranlateY(-100%);
+     transition: all 0.5s ease-in-out;
+     border: 1px solid #3AB0E0;
+}
+
+.demo-div.open {
+     opacity: 1;
+     z-index: 100;
+     visibility: visible;
+     transform: translateY(0);
+     transition: all 0.5s ease-in-out;
+}
+
+.bxslider.blur {
+     opacity: 0.2;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~  END OF DEMO ~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .full-nav {
      background: #3AB0E0;
      color: #18191D;
@@ -123,7 +158,7 @@ a:hover {
      z-index: 99;
      visibility: visible;
      transform: translateY(0);
-     transition: all .5s ease-in-out;
+     transition: all 0.5s ease-in-out;
 }
 
 .full-nav .logo {
@@ -135,6 +170,8 @@ a:hover {
 .nav-inner {
      display: flex;
      justify-content: center;
+     text-transform: uppercase;
+
 }
 
 .nav-inner ul {
@@ -156,6 +193,7 @@ a:hover {
 
 .nav-inner ul li a {
      font-family: "Roboto Condensed", sans-serif;
+     margin-left: 100px;
      font-size: 1.5em;
      color: rgb(61, 61, 61);
 }
