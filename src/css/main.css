@@ -95,11 +95,11 @@ a:hover {
      width: 30px; 
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~  DEMO ~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~  DEMO IDE ~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .demo-div {
-     background: black;
-     color: #18191D;
+     background: white;
+     color: rgb(31, 31, 31);
      position: fixed;
      left: 23%;
      top: 20%;
@@ -128,7 +128,7 @@ a:hover {
      opacity: 0.2;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~  END OF DEMO ~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~  END OF DEMO IDE ~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .full-nav {
      background: #3AB0E0;

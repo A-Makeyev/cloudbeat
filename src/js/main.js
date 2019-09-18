@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 
      // Load ide.html into demo-div
-     $("#ide").load("ide.html");
+     // $("#ide").load("ide.html");
 
 
      const oxygen = {
