@@ -15,12 +15,12 @@ $(document).ready(function() {
 
      $(".demo").click(function() {
           $(".demo-div").toggleClass("open");
-          $(".bxslider").toggleClass("blur");
+          $(".dark").toggleClass("blur");
      });
      
      $(".nav-close").click(function() {
           $(".demo-div").removeClass("open");
-          $(".bxslider").removeClass("blur");
+          $(".dark").removeClass("blur");
      });
 
 
