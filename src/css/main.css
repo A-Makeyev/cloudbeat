@@ -102,7 +102,7 @@ a:hover {
      color: rgb(31, 31, 31);
      position: fixed;
      left: 23%;
-     top: 20%;
+     top: 16%;
      width: 55%;
      height: 73%;
      padding: 3.75rem;
@@ -113,7 +113,8 @@ a:hover {
      overflow-y: hidden;
      transform: tranlateY(-100%);
      transition: all 0.5s ease-in-out;
-     border: 1px solid #3AB0E0;
+     border: 0.5px solid #3AB0E0;
+     border-radius: 5px;
 }
 
 .demo-div.open {
@@ -172,14 +173,14 @@ a:hover {
      left: 0; 
 }
 
-.ide-text {
+#ide-text {
      outline: 0;
      position: fixed;
      top: 120px;
      left: 0; 
      width: 100%;
      height: 100%;
-     font-size: 1.5em;
+     font-size: 1.7em;
      color: rgb(31, 31, 31);
      font-family: "Fira Code", monospace;
 }

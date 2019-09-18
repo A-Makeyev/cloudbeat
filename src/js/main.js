@@ -11,6 +11,10 @@ $(document).ready(function() {
      });
 
 
+     // Type into the ide 
+
+
+
      // Toggle demo div
 
      $(".demo").click(function() {
@@ -49,18 +53,6 @@ $(document).ready(function() {
 
      // Load ide.html into demo-div
      // $("#ide").load("ide.html");
-
-
-     const oxygen = {
-          "init": "web.init();",
-          "open": "web.open();"
-     }
-
-
-     
-
-
-
 
 
 
