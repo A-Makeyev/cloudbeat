@@ -125,6 +125,12 @@ a:hover {
      transition: all 0.5s ease-in-out;
 }
 
+.demo.isDisabled {
+     color: #3AB0E0;
+     pointer-events: none;
+     cursor: not-allowed;
+}
+
 .dark.blur {
      opacity: 0.5;
      background: black;

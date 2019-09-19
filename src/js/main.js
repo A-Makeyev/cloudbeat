@@ -1,3 +1,12 @@
+// var date = new Date();
+// function dateForm(date) {
+//     var dd = String(date.getDate()).padStart(2, "0");
+//     var mm = String(date.getMonth() + 1).padStart(2, "0");
+//     var yyyy = date.getFullYear();
+//     return date = dd + "/" + mm + "/" + yyyy;
+// }
+
+
 $(document).ready(function() {
 
      $(window).scroll(function() {
@@ -10,22 +19,68 @@ $(document).ready(function() {
 
      });
 
+     
 
-     // Type into the ide 
+     $("#ide-text").val("1 ");
+     $(".demo-div").draggable();
+
+
+     var text = "";
+     var oxygen = [
+          "web.init();",
+          "web.open('https://sign-up-page.netlify.com/');",
+          "web.type('id=enterEmail', 'test@gmail.com');",
+          "web.type('id=phone', 'number');",
+          "web.type('id=username', 'Alon Mosk');",
+          "web.type('id=password', 'pa55word');",
+          "web.type('id=confirm_password', 'pa55word');",
+          "web.click('id=submit');",
+          "web.assertText('//div[@id='error']');"
+     ];
+     
 
 
 
-     // Toggle demo div
+
+// var x = document.getElementById('x');
+// var s = ['John', 'Mark', 'Alex'];
+// var i = 0;
+
+// (function loop() {
+//     console.log(i);
+//     x.innerHTML += s[i] + " ";
+//     if (++i < s.length) {
+//         setTimeout(loop, 3000);
+//     }
+//      })();
+
+
+
+
+
+     // Open oxygen demo 
 
      $(".demo").click(function() {
-          $(".demo-div").toggleClass("open");
+          $(".demo").addClass("isDisabled");
           $(".dark").toggleClass("blur");
+          $(".demo-div").toggleClass("open");
+          
+          
+          for (const i = 0; i < oxygen[1].length; i++) {
+               setTimeout(() => {
+                    document.getElementById("ide-text").value += oxygen[1][i];
+               }, 2000);
+          }
+
      });
      
      $(".nav-close").click(function() {
+          $(".demo").removeClass("isDisabled");
           $(".demo-div").removeClass("open");
           $(".dark").removeClass("blur");
+          $("#ide-text").val("1 ");
      });
+
 
 
      // Hamburger menu
