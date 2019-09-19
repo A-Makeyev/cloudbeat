@@ -19,10 +19,6 @@ $(document).ready(function() {
 
      });
 
-     
-
-     $("#ide-text").val("1 ");
-     $(".demo-div").draggable();
 
 
      var text = "";
@@ -40,8 +36,6 @@ $(document).ready(function() {
      
 
 
-
-
 // var x = document.getElementById('x');
 // var s = ['John', 'Mark', 'Alex'];
 // var i = 0;
@@ -52,18 +46,23 @@ $(document).ready(function() {
 //     if (++i < s.length) {
 //         setTimeout(loop, 3000);
 //     }
-//      })();
+// })();
 
 
+     // add nav-close-2
 
 
 
      // Open oxygen demo 
 
+     $(".demo-div").draggable();
+
      $(".demo").click(function() {
+          $("#ide-text").val("1 ");
           $(".demo").addClass("isDisabled");
           $(".dark").toggleClass("blur");
           $(".demo-div").toggleClass("open");
+          
           
           
           for (const i = 0; i < oxygen[1].length; i++) {
@@ -74,6 +73,7 @@ $(document).ready(function() {
 
      });
      
+
      $(".nav-close").click(function() {
           $(".demo").removeClass("isDisabled");
           $(".demo-div").removeClass("open");
