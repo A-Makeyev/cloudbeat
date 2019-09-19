@@ -49,13 +49,15 @@ $(document).ready(function() {
 // })();
 
 
+
+
      // add nav-close-2
 
 
 
      // Open oxygen demo 
 
-     $(".demo-div").draggable();
+     // $(".demo-div").draggable();
 
      $(".demo").click(function() {
           $("#ide-text").val("1 ");
