@@ -9,7 +9,7 @@
 
      // Load ide.html into demo-div
      // $("#ide").load("ide.html");
-     
+
      // $(".demo-div").draggable(); 
 
 
@@ -26,8 +26,6 @@ $(document).ready(function() {
      });
 
 
-
-     var text = "";
      var oxygen = [
           "web.init();",
           "web.open('https://sign-up-page.netlify.com/');",
@@ -40,25 +38,29 @@ $(document).ready(function() {
           "web.assertText('//div[@id='error']');"
      ];
      
+     var init = "web.init();";
+
+     var init = "web.open('https://sign-up-page.netlify.com/');";
+
+     var init = "web.init();";
+
+     var init = "web.init();";
+
+     var init = "web.init();";
+
+     var init = "web.init();";
+
+     var init = "web.init();";
+
+     var init = "web.init();";
+     
+     var init = "web.init();";
 
 
-// var x = document.getElementById('x');
-// var s = ['John', 'Mark', 'Alex'];
-// var i = 0;
 
-// (function loop() {
-//     console.log(i);
-//     x.innerHTML += s[i] + " ";
-//     if (++i < s.length) {
-//         setTimeout(loop, 3000);
-//     }
-// })();
-
-
-
-
-
-
+var ideText = document.getElementById("ide-text");
+//var s = ['John', 'Mark', 'Alex'];
+var index = 0;
 
 
      // Open oxygen demo 
@@ -69,13 +71,13 @@ $(document).ready(function() {
           $(".dark").toggleClass("blur");
           $(".demo-div").toggleClass("open");
           
-          
-          
-          for (const i = 0; i < oxygen[1].length; i++) {
-               setTimeout(() => {
-                    document.getElementById("ide-text").value += oxygen[1][i];
-               }, 2000);
-          }
+          (function type() {
+               ideText.value += init.charAt(index);
+               if (++index < init.length) {
+                   setTimeout(type, 100);
+               }
+           })();
+
 
      });
      
