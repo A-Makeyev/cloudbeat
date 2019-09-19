@@ -53,7 +53,7 @@ $(document).ready(function() {
      var init = "web.init();";
 
      var init = "web.init();";
-     
+
      var init = "web.init();";
 
 
@@ -64,9 +64,10 @@ var index = 0;
 
 
      // Open oxygen demo 
+     
+     $("#ide-text").val("1 ");
 
      $(".demo").click(function() {
-          $("#ide-text").val("1 ");
           $(".demo").addClass("isDisabled");
           $(".dark").toggleClass("blur");
           $(".demo-div").toggleClass("open");
@@ -86,14 +87,12 @@ var index = 0;
           $(".demo").removeClass("isDisabled");
           $(".demo-div").removeClass("open");
           $(".dark").removeClass("blur");
-          $("#ide-text").val("1 ");
      });
 
      $(".nav-close-demo").click(function() {
           $(".demo").removeClass("isDisabled");
           $(".demo-div").removeClass("open");
           $(".dark").removeClass("blur");
-          $("#ide-text").val("1 ");
      });
 
 
