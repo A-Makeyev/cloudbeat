@@ -79,7 +79,7 @@ a:hover {
 .nav-icon span {
      background: #0D394E;
      width: 30px;
-     height: 1px;
+     height: 1.5px;
      display: block;
      transition: 300ms linear all;
 }
@@ -89,12 +89,14 @@ a:hover {
 .nav-icon span:nth-child(1),
 .nav-icon span:nth-child(3) {
      width: 20px;
+     height: 2px;
      margin: 0 auto;
 }
 
 .nav-icon span:nth-child(2) {
      margin: 5px 0;
      width: 30px;
+     height: 2px;
 }
 
 .nav-icon:hover span:nth-child(1),
@@ -131,6 +133,10 @@ a:hover {
      color: #0C394E;
 }
 
+.nav.fixed .nav-icon span {
+     background: #0D394E;
+}
+
 /* Closing hamburger menu */
 
 .corner-circle {
@@ -158,7 +164,7 @@ a:hover {
      display: block;
      position: absolute;
      width: 30px;
-     height: 1px;
+     height: 1.5px;
      top: 15px;
      background: rgb(61, 61, 61);
 
@@ -170,10 +176,6 @@ a:hover {
 
 .nav-close span:nth-child(2) {
      transform: rotate(-45deg);
-}
-
-.nav.fixed .nav-icon span {
-     background: #0D394E;
 }
 
 
@@ -259,6 +261,7 @@ a:hover {
      position: fixed;
      top: 93px;
      left: 0; 
+     border-top: 1px solid #AAAAAA;
 }
 
 #ide-text {
@@ -271,6 +274,49 @@ a:hover {
      font-size: 1.7em;
      color: rgb(31, 31, 31);
      font-family: "Fira Code", monospace;
+}
+
+/* Demo closing hamburger menu */
+
+.corner-circle-demo {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 70px;
+     height: 55px;
+     background-color: white;
+     border-radius: 0 0 0 120px;
+     border: 0.5px solid #A2C5FD;
+     z-index: 2;
+}
+
+.nav-close-demo {
+     display: block;
+     position: absolute;
+     width: 40px;
+     height: 35px;
+     top: 5px;
+     right: 5px;
+     /* border: 1px solid red; */
+}
+
+.nav-close-demo span {
+     display: block;
+     position: absolute;
+     width: 25px;
+     height: 1.5px;
+     top: 17px;
+     left: 5px;
+     background: rgb(61, 61, 61);
+
+}
+
+.nav-close-demo span:nth-child(1) {
+     transform: rotate(45deg);
+}
+
+.nav-close-demo span:nth-child(2) {
+     transform: rotate(-45deg);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~  END OF DEMO IDE ~~~~~~~~~~~~~~~~~~~~~~~ */

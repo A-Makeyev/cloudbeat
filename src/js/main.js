@@ -7,6 +7,12 @@
 // }
 
 
+     // Load ide.html into demo-div
+     // $("#ide").load("ide.html");
+     
+     // $(".demo-div").draggable(); 
+
+
 $(document).ready(function() {
 
      $(window).scroll(function() {
@@ -51,13 +57,11 @@ $(document).ready(function() {
 
 
 
-     // add nav-close-2
+
 
 
 
      // Open oxygen demo 
-
-     // $(".demo-div").draggable();
 
      $(".demo").click(function() {
           $("#ide-text").val("1 ");
@@ -83,6 +87,24 @@ $(document).ready(function() {
           $("#ide-text").val("1 ");
      });
 
+     $(".nav-close-demo").click(function() {
+          $(".demo").removeClass("isDisabled");
+          $(".demo-div").removeClass("open");
+          $(".dark").removeClass("blur");
+          $("#ide-text").val("1 ");
+     });
+
+
+     $(".nav-close-demo").mouseenter(function() {
+          $("#nav-close-demo-1").css("backgroundColor", "#3AAFDE");
+          $("#nav-close-demo-2").css("backgroundColor", "#3AAFDE");
+     });
+
+
+     $(".nav-close-demo").mouseleave(function() {
+          $("#nav-close-demo-1").css("backgroundColor", "#3D3D3D");
+          $("#nav-close-demo-2").css("backgroundColor", "#3D3D3D");
+     });
 
 
      // Hamburger menu
@@ -101,15 +123,10 @@ $(document).ready(function() {
           $("#nav-close-2").css("backgroundColor", "#3AAFDE");
      });
 
-
      $(".nav-close").mouseleave(function() {
           $("#nav-close-1").css("backgroundColor", "#3D3D3D");
           $("#nav-close-2").css("backgroundColor", "#3D3D3D");
      });
-
-
-     // Load ide.html into demo-div
-     // $("#ide").load("ide.html");
 
 
 
