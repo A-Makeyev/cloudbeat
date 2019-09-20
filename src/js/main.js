@@ -26,45 +26,28 @@ $(document).ready(function() {
      });
 
 
-     var oxygen = [
-          "web.init();",
-          "web.open('https://sign-up-page.netlify.com/');",
-          "web.type('id=enterEmail', 'test@gmail.com');",
-          "web.type('id=phone', 'number');",
-          "web.type('id=username', 'Alon Mosk');",
-          "web.type('id=password', 'pa55word');",
-          "web.type('id=confirm_password', 'pa55word');",
-          "web.click('id=submit');",
-          "web.assertText('//div[@id='error']');"
-     ];
-     
-     var init = "web.init();";
-
-     var init = "web.open('https://sign-up-page.netlify.com/');";
 
      var init = "web.init();";
-
-     var init = "web.init();";
-
-     var init = "web.init();";
-
-     var init = "web.init();";
-
-     var init = "web.init();";
-
-     var init = "web.init();";
-
-     var init = "web.init();";
+     var open = "web.open('https://sign-up-page.netlify.com/');";
+     var typeEmail = "web.type('id=enterEmail', 'test@gmail.com');";
+     var typePhone = "web.type('id=phone', 'number');"
+     var typeUser = "web.type('id=username', 'Alon Mosk');"
+     var typePw = "web.type('id=password', 'pa55word');"
+     var typeCpw = "web.type('id=confirm_password', 'pa55word');";
+     var click = "web.click('id=submit');";
+     var assert = "web.assertText('//div[@id='error']');";
 
 
+// use of js assert fail
+// use of db
+// sql
 
-var ideText = document.getElementById("ide-text");
-//var s = ['John', 'Mark', 'Alex'];
-var index = 0;
+     var ideText = document.getElementById("ide-text");
+     var index = 0;
 
 
      // Open oxygen demo 
-     
+
      $("#ide-text").val("1 ");
 
      $(".demo").click(function() {
@@ -72,12 +55,28 @@ var index = 0;
           $(".dark").toggleClass("blur");
           $(".demo-div").toggleClass("open");
           
-          (function type() {
+          
+
+          (function insert() {
                ideText.value += init.charAt(index);
                if (++index < init.length) {
-                   setTimeout(type, 100);
+                   setTimeout(insert, 100);
                }
            })();
+
+
+ 
+
+           setInterval(() => {
+               (function insert() {
+                    ideText.value += open.charAt(index);
+                    if (++index < open.length - 1) {
+                        setTimeout(insert, 100);
+                    }
+                })();
+           }, 3000);
+
+
 
 
      });
