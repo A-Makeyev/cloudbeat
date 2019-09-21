@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 
 
-     
+
 
 
      var init = "web.init();";
@@ -69,14 +69,14 @@ $(document).ready(function() {
 
 
  
-           setInterval(() => {
-               (function insert() {
-                    ideText.value += open.charAt(index);
-                    if (++index < open.length - 1) {
-                        setTimeout(insert, 50);
-                    }
-                })();
-           }, 1000);
+          //  setInterval(() => {
+          //      (function insert() {
+          //           ideText.value += open.charAt(index);
+          //           if (++index < open.length - 1) {
+          //               setTimeout(insert, 50);
+          //           }
+          //       })();
+          //  }, 1000);
 
 
 
