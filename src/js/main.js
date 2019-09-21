@@ -27,6 +27,9 @@ $(document).ready(function() {
 
 
 
+     
+
+
      var init = "web.init();";
      var open = "web.open('https://sign-up-page.netlify.com/');";
      var typeEmail = "web.type('id=enterEmail', 'test@gmail.com');";
@@ -60,21 +63,20 @@ $(document).ready(function() {
           (function insert() {
                ideText.value += init.charAt(index);
                if (++index < init.length) {
-                   setTimeout(insert, 100);
+                   setTimeout(insert, 50);
                }
            })();
 
 
  
-
            setInterval(() => {
                (function insert() {
                     ideText.value += open.charAt(index);
                     if (++index < open.length - 1) {
-                        setTimeout(insert, 100);
+                        setTimeout(insert, 50);
                     }
                 })();
-           }, 3000);
+           }, 1000);
 
 
 
